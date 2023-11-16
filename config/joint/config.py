@@ -23,33 +23,33 @@ class Config:
     style_dim = 128
     downsample_ratio    = 1     # Whole Model    
     #### Text ####
-    with open(token_list_path) as f:
+    with open(token_list_path, 'r', encoding='utf-8') as f:
         tokens = [t.strip() for t in f.readlines()]
     n_symbols           = len(tokens)
     sep                 = " "
 
     #### Speaker ####
-    with open(speaker2id_path) as f:
+    with open(speaker2id_path, 'r', encoding='utf-8') as f:
         speakers = [t.strip() for t in f.readlines()]
     speaker_n_labels = len(speakers)
 
     #### Emotion ####
-    with open(emotion2id_path) as f:
+    with open(emotion2id_path, 'r', encoding='utf-8') as f:
         emotions = [t.strip() for t in f.readlines()]
     emotion_n_labels = len(emotions)
 
     #### Speed ####
-    with open(speed2id_path) as f:
+    with open(speed2id_path, 'r', encoding='utf-8') as f:
         speeds = [t.strip() for t in f.readlines()]
     speed_n_labels = len(speeds)
 
     #### Pitch ####
-    with open(pitch2id_path) as f:
+    with open(pitch2id_path, 'r', encoding='utf-8') as f:
         pitchs = [t.strip() for t in f.readlines()]
     pitch_n_labels = len(pitchs)
 
     #### Energy ####
-    with open(energy2id_path) as f:
+    with open(energy2id_path, 'r', encoding='utf-8') as f:
         energys = [t.strip() for t in f.readlines()]
     energy_n_labels = len(energys)
 
