@@ -29,7 +29,8 @@ from transformers import AutoTokenizer
 import base64
 from pathlib import Path
 
-DEVICE="cpu"
+#DEVICE="cpu"
+DEVICE="cuda"
 MAX_WAV_VALUE = 32768.0
 
 config = Config()
