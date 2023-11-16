@@ -70,8 +70,8 @@ wget https://huggingface.co/WangZeJun/simbert-base-chinese/resolve/main/vocab.tx
 
 1. You have to download the [pretrained models](https://drive.google.com/drive/folders/1y6Xwj_GG9ulsAonca_unSGbJ4lxbNymM?usp=sharing), and run:
 ```sh
-mkdir -p outputs/style_encoder/ckpt
-mkdir -p outputs/prompt_tts_open_source_joint/ckpt
+mkdir outputs\style_encoder\ckpt
+mkdir outputs\prompt_tts_open_source_joint\ckpt
 ```
 2. And place `g_*`, `do_*` under `outputs/prompt_tts_open_source_joint/ckpt` and  put `checkpoint_*` in `outputs/style_encoder/ckpt`.
 3. The inference text format is `<speaker>|<style_prompt/emotion_prompt/content>|<phoneme>|<content>`. 
